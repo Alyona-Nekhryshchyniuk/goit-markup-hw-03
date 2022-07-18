@@ -54,6 +54,11 @@ img {
   padding: 0 15px;
 }
 
+.section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
 /* HEADER */
 
 header {
@@ -155,11 +160,11 @@ footer a:focus {
   background-color: var(--sporadic-background-color);
 }
 
-/* ADVANTAGES */
+/* PROS SECTION */
 
 .pros-section {
   font-size: 14px;
-  padding-top: 95px;
+  padding-bottom: 0px;
 }
 
 .hidden-heading {
@@ -196,13 +201,13 @@ footer a:focus {
 .pros-discription {
   line-height: 1.71;
   color: var(--tertiary-color);
+  height: 70px;
 }
 
-/* WHAT WE DO*/
+/* WORKS SECTION*/
 
 .works-section {
-  padding-top: 75px;
-  padding-bottom: 95px;
+  padding-top: 100px;
 }
 
 .section-heading {
@@ -222,11 +227,9 @@ footer a:focus {
 
 .team-section {
   background-color: var(--secondary-background-color);
-  padding-bottom: 95px;
 }
 
 .team-heading {
-  padding-top: 95px;
 }
 
 .cards-list {
@@ -266,11 +269,6 @@ footer a:focus {
 
 .current {
   color: var(--secondary-color);
-}
-
-.porfolio-section {
-  padding-top: 95px;
-  padding-bottom: 95px;
 }
 
 /* PORFOLIO BUTTONS */
