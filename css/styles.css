@@ -13,9 +13,6 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 ul {
@@ -48,7 +45,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -61,15 +58,18 @@ img {
 
 /* HEADER */
 
-header {
+header > .container {
   display: flex;
-  align-items: center;
   border-bottom: 1px solid #ececec;
   height: 80px;
 }
 
 header li {
   display: inline;
+}
+header ul {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -79,6 +79,12 @@ header li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  display: inline;
+}
+
+header .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-logo-ending {
@@ -201,7 +207,6 @@ footer a:focus {
 .pros-discription {
   line-height: 1.71;
   color: var(--tertiary-color);
-  height: 70px;
 }
 
 /* WORKS SECTION*/
@@ -220,7 +225,9 @@ footer a:focus {
 
 .works-list {
   display: flex;
-  justify-content: space-between;
+}
+.work-example:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* TEAM */
@@ -249,13 +256,16 @@ footer a:focus {
   margin-left: auto;
   margin-right: auto;
 }
+.worker-identification {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .worker-name {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
-  margin-top: 30px;
 }
 
 .position {
@@ -355,6 +365,10 @@ footer {
   background-color: var(--primary-background-color);
   padding: 60px 0;
 }
+footer .logo {
+  display: block;
+  margin-bottom: 9px;
+}
 
 .footer-logo-ending {
   color: var(--quaternary-color);
@@ -369,6 +383,9 @@ address {
 
 address li {
   color: var(--unique-color);
+}
+address li:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 a[href*="maps"] {

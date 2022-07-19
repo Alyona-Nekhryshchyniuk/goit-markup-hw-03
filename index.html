@@ -7,7 +7,7 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link href="./css/styles.css" rel="stylesheet" />
     <link
@@ -24,27 +24,29 @@
   <body>
     <!-- HEADER -->
 
-    <header class="container">
-      <a href="index.html" class="logo"
-        >Web<span class="header-logo-ending">Studio</span></a
-      >
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="index.html" class="current">Studio</a>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo"
+          >Web<span class="header-logo-ending">Studio</span></a
+        >
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="current">Studio</a>
+            </li>
+            <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-list">
+          <li class="mail-item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a href="">Contacts</a></li>
+          <li class="tel-item">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact-list">
-        <li class="mail-item">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="tel-item">
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- HERO SECTION -->
@@ -56,38 +58,40 @@
 
       <!-- PROS SECTION -->
 
-      <section class="pros-section container section">
-        <h2 class="hidden-heading">Our advantages</h2>
-        <ul class="pros-list">
-          <li class="pros-list-item">
-            <h3 class="pros-heading">ATTENTION TO DETAILS</h3>
-            <p class="pros-discription">
-              We go into all the details and processes of your business to
-              develop a customized solution.
-            </p>
-          </li>
-          <li class="pros-list-item">
-            <h3 class="pros-heading">PUNCTUALITY</h3>
-            <p class="pros-discription">
-              With us, you can feel safe and secure. An important principle of
-              the company: respect your time and respect the agreed deadlines.
-            </p>
-          </li>
-          <li class="pros-list-item">
-            <h3 class="pros-heading">PLANNING</h3>
-            <p class="pros-discription">
-              You will be able to observe and participate in every phase of
-              solution development and implementation.
-            </p>
-          </li>
-          <li class="pros-list-item">
-            <h3 class="pros-heading">MODERN TECHNOLOGIES</h3>
-            <p class="pros-discription">
-              We use innovative tools to solve assigned tasks. It's time to
-              simplify work processes.
-            </p>
-          </li>
-        </ul>
+      <section class="pros-section section">
+        <div class="container">
+          <h2 class="hidden-heading">Our advantages</h2>
+          <ul class="pros-list">
+            <li class="pros-list-item">
+              <h3 class="pros-heading">ATTENTION TO DETAILS</h3>
+              <p class="pros-discription">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li class="pros-list-item">
+              <h3 class="pros-heading">PUNCTUALITY</h3>
+              <p class="pros-discription">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and respect the agreed deadlines.
+              </p>
+            </li>
+            <li class="pros-list-item">
+              <h3 class="pros-heading">PLANNING</h3>
+              <p class="pros-discription">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li class="pros-list-item">
+              <h3 class="pros-heading">MODERN TECHNOLOGIES</h3>
+              <p class="pros-discription">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- WORKS SECTION -->
       <section class="works-section container section">
@@ -133,8 +137,10 @@
                 width="270"
                 height="260"
               />
-              <h3 lang="ru" class="worker-name">Игорь Демьяненко</h3>
-              <p class="position">Product Designer</p>
+              <div class="worker-identification">
+                <h3 lang="ru" class="worker-name">Игорь Демьяненко</h3>
+                <p class="position">Product Designer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -143,8 +149,10 @@
                 width="270"
                 height="260"
               />
-              <h3 lang="ru" class="worker-name">Ольга Репина</h3>
-              <p class="position">Frontend Developer</p>
+              <div class="worker-identification">
+                <h3 lang="ru" class="worker-name">Ольга Репина</h3>
+                <p class="position">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -153,8 +161,10 @@
                 width="270"
                 height="260"
               />
-              <h3 lang="ru" class="worker-name">Николай Тарасов</h3>
-              <p class="position">Marketing</p>
+              <div class="worker-identification">
+                <h3 lang="ru" class="worker-name">Николай Тарасов</h3>
+                <p class="position">Marketing</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -163,8 +173,10 @@
                 width="270"
                 height="260"
               />
-              <h3 lang="ru" class="worker-name">Михаил Ермаков</h3>
-              <p class="position">UI Designer</p>
+              <div class="worker-identification">
+                <h3 lang="ru" class="worker-name">Михаил Ермаков</h3>
+                <p class="position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
