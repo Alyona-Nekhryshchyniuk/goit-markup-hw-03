@@ -57,19 +57,19 @@ img {
 }
 
 /* HEADER */
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
 
 header > .container {
   display: flex;
-  border-bottom: 1px solid #ececec;
-  height: 80px;
+  align-items: center;
 }
 
 header li {
   display: inline;
-}
-header ul {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo {
@@ -80,11 +80,6 @@ header ul {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   display: inline;
-}
-
-header .logo {
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .header-logo-ending {
@@ -132,7 +127,8 @@ footer a:focus {
 .hero-section {
   text-align: center;
   background-color: var(--primary-background-color);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-heading {
@@ -143,7 +139,6 @@ footer a:focus {
   text-transform: uppercase;
   color: var(--quaternary-color);
   width: 700px;
-  padding-top: 200px;
   margin: 0px auto 30px auto;
 }
 
@@ -164,6 +159,13 @@ footer a:focus {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--sporadic-background-color);
+}
+
+/* FOR SOME SECTIONS */
+.pros-list-item:not(:last-child),
+.work-example:not(:last-child),
+.team-card:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* PROS SECTION */
@@ -192,10 +194,6 @@ footer a:focus {
   width: calc((100% - 90px) / 4);
 }
 
-.pros-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .pros-heading {
   font-size: inherit;
   font-weight: 700;
@@ -220,14 +218,11 @@ footer a:focus {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .works-list {
   display: flex;
-}
-.work-example:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* TEAM */
@@ -236,12 +231,9 @@ footer a:focus {
   background-color: var(--secondary-background-color);
 }
 
-.team-heading {
-}
-
 .cards-list {
   display: flex;
-  column-gap: 30px;
+  /* column-gap: 30px; */
   flex-wrap: wrap;
 }
 
@@ -301,7 +293,7 @@ footer a:focus {
   padding: 6px 25px;
 }
 
-.button-item:not(:last-child) button {
+.button-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -328,9 +320,15 @@ button.active,
 }
 
 .porfolio-card {
-  border: 1px solid #eee;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-card-description {
+  padding: 20px 24px 20px 24px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 .porfolio-card:nth-child(3n) {
@@ -347,16 +345,13 @@ button.active,
   line-height: 2;
   letter-spacing: 6%;
   text-align: left;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .porfolio-card-subtitle {
   line-height: 1.9;
   text-align: left;
   color: var(--tertiary-color);
-  padding: 5px 25px 20px 25px;
 }
 
 /* FOOTER */
